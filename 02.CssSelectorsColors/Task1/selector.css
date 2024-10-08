@@ -1,0 +1,89 @@
+/*1ci*/
+.inter{
+    background-color: aqua;
+}
+/*2ci*/
+.srtbox.sgtbox {
+    color: aqua;
+}   
+/*3cu*/
+p.ptxt{
+    color: blue;
+}
+/*4cu*/
+.page h1, .page p{
+    color: brown;
+}
+/*5ci*/
+div span p{
+    color: blueviolet;
+}
+/*6ci*/
+a:active {
+    color: rgba(208, 230, 8, 0.926);
+}
+/*7ci*/
+input:disabled{
+    color: red;
+}
+input:enabled{
+    color: blue;
+}
+/*8ci*/
+.box {
+  background-color: lightgreen;
+  height: 90px;
+  width: 90px;
+}
+.box:empty {
+  background-color: salmon;}
+/*9cu*/
+.dinv p:first-child{
+    background-color: yellow;
+}
+/*10cu*/
+.rem p:first-of-type {
+  background-color: yellow;
+}
+/*11ci*/
+.input input:focus {
+  background-color: yellow;
+}
+/*12ci*/
+.href a:hover{
+    background-color: red;
+    font-size: 18px;
+}
+/*13cu*/
+.secimler input:indeterminate{
+    box-shadow: 0 0 5px 3px red;
+}
+/*14cu*/
+.ptexts p:last-child{
+    color: red;
+}
+/*15ci*/
+.hed h1:last-of-type{
+    color: chartreuse;
+}
+/*16ci*/
+.hetrec p:only-child {
+  background: red;
+}
+/*17ci*/
+.read-only input:read-only{
+    color: brown;
+}  
+/*18ci*/
+:root {
+  background: #ffffff;
+}
+/*19cu*/
+.target :target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+/*20ci*/
+.is :is(p.intro, ul, ol){
+    color: red;
+}
