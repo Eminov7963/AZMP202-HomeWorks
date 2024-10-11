@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img img {
+  padding-top: 50px;
+  margin: 0px auto;
+  width: 160px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  width: 50vw;
+  background-color: rgb(206, 194, 194);
+  display: inline-block;
+  justify-content: center;
+}
+.About {
+  display: inline-block;
+  background-color: rgb(85, 10, 160);
+  margin: 0 auto;
+}
+.container h1,
+p {
+  text-align: center;
+}
+.container h1 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.container p {
+  padding-bottom: 30px;
+}
+.button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 100px;
+  height: 50px;
+}
+.button button{
+  background-color: black;
+  color: white;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.icon i {
+  padding: 0 0 50px 20px;
+}
+/* --------------About Me----------------------- */
+.About{
+
+    width: 50vw;
+    height: 30vh;
+}
+.About h1, p{
+    text-align: center;
+    
+}
+.About p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.Resume-Portfolilo{
+    margin: o auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Resume-Portfolilo button{
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    
+}

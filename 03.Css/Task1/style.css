@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-first{
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid;
+    text-align: center;
+    padding: 70px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    
+}
+.container-second{
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid;
+    text-align: center;
+    padding: 70px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    
+}
+.container-three{
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid;
+    text-align: center;
+    padding: 70px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+.icon {
+    font-size: 50px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+.bottom{
+    margin-top: 30px;
+    border:200px
+}
+.bottom button{
+    background-color: black;
+    color: white;
+    font-size:20px;
+    border: 20px solid black;
+    
+    border-radius: 30px;
+    
+}
+
+.twit p.text{
+    padding-top: 15px;
+    letter-spacing: 1px;
+
+
+}
