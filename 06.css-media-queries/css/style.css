@@ -105,7 +105,8 @@ section#services-2 .container .txt{
     text-align: center;
 
 }
-section#services-2 .container .row .col-4 .img{
+section#services-2 .container .row .col-4 .img:hover {
+    transform: scale(1.2);
   
 }
 section#services-2 .container .row .col-4 .img img{
@@ -120,7 +121,7 @@ section#services-2 .container .row .col-4 h1{
 
 /* ---------footer--------- */
 footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(225, 215, 215);
 }
 footer .row{
     padding: 20px 0px;
@@ -129,21 +130,155 @@ footer .row .col-3{
     text-align: center;
 }
 footer .row .col-3 a{
-    color: rgb(170, 168, 168);
+    color: rgb(44, 41, 41);
     
     font-size: 20px;
 }
 
 
+/* section-4 */
+#section4{
+    padding: 70px;
+}
+#section4 .team{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#section4 .phote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section4 .img{
+    width: 224px;
+    height: 224px;
+    border: 10px solid rgb(236, 232, 232);
+    border-radius: 50%;
+    overflow: hidden;
+}
+#section4 .img img{
+    width: 100%;
+    height: 100%;
+    
+}
+#section4 .name{
+    padding:10px 0px;
+    text-align: center;
+}
+#section4 .icon-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#section4 .icon-main i{
+    font-size: 23px;
+    padding: 5px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    
+}
+#section4 .team-start{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section4 .team-end{
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+}
+
 
 /* section-3 */
 #section3{
     background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg);
+    padding-top: 30px;
 }
-#section3 .trt .h-5{
+.trt{
+    font-size: 50px;
+    color: white;
+    margin: 0 auto;
     text-align: center;
 }
+#section3 .row .login input{
+    width: 530px;
+    height: 67px;
+}
 
+#section3 .row .col-6-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#section3 .row #massage textarea{
+    width: 530px;
+    height: 202px;
+}
+
+#section3 .col-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 .row .buttom button{
+    color: white;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 100px;
+    
+    
+}
+#section3 .row .buttom button a{
+    color: white;
+    background-color: orange;
+    font-size: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    
+    
+}
+/* finale */
+#finale{
+    margin: 30px;
+}
+#finale .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#finale .container .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#finale .container .icon .same-icon {
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#finale .container .icon i{
+    margin: 10px;
+    font-size: 20px;
+
+}
+#finale .container .icon a{
+    padding: 10px;
+   color: white;
+   background-color: black;
+   border-radius: 50%;
+   
+    
+}
+header .head .aycon{
+
+    display: none;
+}
 
 
 
@@ -175,10 +310,33 @@ footer .row .col-3 a{
     }
 
 @media only screen and ( max-width: 767px ){
-    .row .col-sm-6 {
-        
+        /* .row .col-sm-6 {
+            
+            }
+        } */
+    .container .head .nav ul{
+        display: none;
         }
+    .container .head .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    .container .head .icons .bar{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        background-color: rgb(255, 0, 0);
+        padding: 5px;
+    }
+    .container .head .icons .many{
+        margin-bottom: 20px;
+        background-color: rgb(255, 0, 0);
+        padding: 5px;
+    }
+    .container .head .icons a{
+        color: white;
+    }
+}
     
 
 @media only screen and ( max-width: 563px ){
