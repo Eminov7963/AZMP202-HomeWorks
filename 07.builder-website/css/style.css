@@ -276,8 +276,10 @@ section#latest .overlay{
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: opacity 0.5s ease; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(10%);
     padding: 20px;
+    
 }
 
 
@@ -298,5 +300,6 @@ section#latest .col-4:hover img{
 }
 section#latest .col-4:hover .overlay{
     opacity: 0.7;
+    transform: translateY(0);
     z-index: 1;
 }
