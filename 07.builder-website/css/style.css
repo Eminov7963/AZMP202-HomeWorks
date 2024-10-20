@@ -260,6 +260,13 @@ section#latest .row-h1{
     text-align: center;
     padding: 30px 0px;
 }
+section#latest .row-h1 h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+section#latest .row2{
+    width: 100%;
+}
 
 
 
@@ -277,7 +284,6 @@ section#latest .overlay{
     align-items: center;
     text-align: center;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    transform: translateY(10%);
     padding: 20px;
     
 }
@@ -303,3 +309,309 @@ section#latest .col-4:hover .overlay{
     transform: translateY(0);
     z-index: 1;
 }
+
+/* section-members */
+section#members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section#members .row-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section#members .row-text .text{
+    text-align: center;
+    padding: 90px 0px 40px 0px;
+}
+section#members .col-3 .img{
+    position: relative;
+    
+}
+section#members .col-3 .img .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 1px;
+    width: 263px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: orange;
+    transition: 0.3s;
+    /* transition-duration: 0.1s; */
+    /* transition-delay: 0.1s; */
+    /* transition-property: all; */
+    transition-timing-function: ease-in-out;
+    
+}
+section#members .col-3 .img .overlay a{
+    padding: 0px 15px 0px 15px;
+    color: black;
+    opacity: 0.3;
+    
+}
+section#members .col-3 .img:hover .overlay{
+    opacity: 0.7;
+}
+section#members .col-3 .img:hover img{
+    opacity: 0.5;
+}
+section#members .col-3 h1, p{
+
+    text-align: center;
+}
+section#members .col-3 h1{
+    padding-top: 20px;
+}
+/* section-static */
+section#static{
+    background-color: rgb(246, 174, 31);
+    margin-top: 60px;
+}
+section#static .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+section#static .row .col-2{
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* section-unique */
+section#unique{
+    margin: 80px 0px;
+}
+section#unique .row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+section#unique .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#unique .text h1{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+section#unique .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section#unique .col-4 .cards{
+    border: 1px solid rgb(164, 161, 161);
+    padding: 30px 50px;
+    border-radius: 8px;
+}
+section#unique .col-4 .info{
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 20px;
+}
+section#unique .col-4 .info .icon{
+    font-size: 160%;
+    padding-right: 10px;
+}
+section#unique .col-4 p{
+    text-align: left;
+}
+section#unique .col-4 .cards:hover{
+    transition: 0.4s;
+    transform: scale(1.02);
+    box-shadow: 8px 8px 16px rgba(136, 131, 131, 0.3);
+}
+section#unique .col-4 .cards:hover .info{
+    color: orange;
+    transition: 0.6s;
+}
+/* section-2girls */
+section#girls{
+    background-color: rgb(244, 235, 245);
+    padding: 50px 0px;
+}
+
+section#girls .card{
+    border: 1px solid rgb(207, 202, 202);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+section#girls .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#girls .head p{
+    width: 50%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+section#girls .card h1{
+    font-size: 20px;
+    padding: 30px 0px 10px;
+}
+
+section#girls .col-6 .card:hover{
+    transition: 1s;
+    transform: scale(1.01);
+    box-shadow: 3px 3px 3px 3px rgb(147, 144, 144);
+    
+}
+section#girls .col-6 .card:hover h1{
+    transition: 1s;
+    transform: scale(1.01);
+    color: orange;
+    
+}
+/* section-img */
+section#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px;
+}
+section#img .row .col-2{
+    margin: 0px 15px;
+}
+section#img .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section#img .row .img{
+    opacity: 0.5;
+    
+}
+section#img .row .img:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    transition: 0.7s;
+    
+}
+/* footer */
+footer{
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+/* .first */
+footer .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .first .col-6{
+    margin-right: 40px;
+}
+footer .first .col-6{
+    margin-left: 40px;
+}
+footer .first .col-6 h1, p{
+    text-align: left;
+}
+footer .first .col-6 h1{
+    padding-bottom: 15px;
+}
+footer .first .col-6 p{
+    padding-bottom: 10px;
+}
+footer .first .col-6 a{
+    color: orange;
+    font-size: 20px;
+}
+/* second */
+footer .col-12{
+}
+footer .col-12 p{
+    text-align: left;
+    padding: 10px;
+    
+}
+footer .col-12 input{
+    font-size: 15px;
+    width: 450px;
+    margin-top:20px ;
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+footer .col-12 .icons{
+    text-align: center;
+    background-color: orange;
+    position: absolute;
+    top: 35%;
+    right: 30%;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    width: 40px;
+
+
+}
+footer .col-12 .email{
+    position: relative;
+}
+
+footer .col-12 .icons a{
+    color: rgb(71, 70, 70);
+
+
+}
+/* footer-second-row */
+footer .footer-col12{
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+footer .footer-col12 .text{
+    display: flex;
+    align-items: center;
+}
+footer .footer-col12 .text a{
+    color: orange;
+}
+footer .footer-col12 .foot-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-col12 .foot-icon .icon{
+    margin-left: 20px;
+    background-color: black;
+    padding: 10px;
+    transition: 0.3s;
+}
+footer .footer-col12 .foot-icon .icon a{
+    color: white;
+}
+footer .footer-col12 .foot-icon .icon:hover{
+    background-color: orange;
+
+}
+footer .footer-col12 .foot-icon .icon:hover a{
+    color: rgb(55, 53, 53);
+    
+}
+
+/*  */
