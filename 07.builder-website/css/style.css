@@ -73,6 +73,11 @@ header .container .row .buttons .quote:hover a{
 /* section-nav */
 section#nav{
     padding: 30px;
+
+}
+section#nav .nav .head-icon{
+    display: none;
+    
 }
 section#nav .container .row{
     display: flex;
@@ -614,4 +619,40 @@ footer .footer-col12 .foot-icon .icon:hover a{
     
 }
 
-/*  */
+/* media */
+
+@media only screen and ( max-width: 1023px ){
+    .row .col-md-3 {
+        
+      }
+    }
+
+@media only screen and ( max-width: 912px ){
+    section#nav .nav .head-icon{
+        display: block;
+        font-size: 20px;
+    }
+    section#nav .nav .head-icon a{
+        color: orange;
+    }
+    section#nav .nav nav{
+        display: none !important;
+    } 
+    header .col-mdd-12 {
+        
+        }
+    }
+    
+
+@media only screen and ( max-width: 767px ){
+    .row .col-sm-6 {
+            
+        }
+    }
+    
+
+@media only screen and ( max-width: 563px ){
+    header .col-ssm-12 {
+        display: none;
+        }
+    }
