@@ -1,0 +1,43 @@
+header{
+    
+    .container{
+        padding: 50px;
+        
+        .row{
+            @include display();
+            justify-content: space-between;
+            .nav{
+                nav{
+                    ul{
+                        @include display();
+                        column-gap: 30px;
+                        font-size: 1.3rem;
+                        a{
+                            text-decoration: none;
+                            color:$fourt-color; 
+                        }
+                        li{
+                            
+                            &:hover a{
+                                color: $third-color;
+                                transition: 0.3s;    
+                            }
+                        }
+                    }
+                }
+            }
+            .icon{
+                @include display();
+                column-gap: 40px;
+                font-size: 20px;
+                cursor: pointer;
+                i{
+                    &:hover{
+                        color:$third-color; 
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
