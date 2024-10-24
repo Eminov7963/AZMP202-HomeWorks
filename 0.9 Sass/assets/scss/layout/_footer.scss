@@ -1,7 +1,8 @@
 footer{
     padding: 100px 0px;
     background-color:$fifth-color ;
-    .container{
+    section#head{
+        .container{
         background-color: $second-color;
         padding: 50px 0px;
         .row{
@@ -32,9 +33,11 @@ footer{
                         background-color: $seven-color;
                         border-radius: 8px;
                         font-family: "Epilogue", sans-serif;
+                        font-weight: 700;
 
                         &:hover{
                             background-color: $ten-color;
+                            transition: 0.5s;
                             transform: scale(1.02);
                             color: $seven-color;
                             
@@ -45,12 +48,75 @@ footer{
                 
             }
             .col2{
+                @include display();
+                @include for-phone-only{
+                    order: -1;
+                }
+                
                 .img{
+                     
                     img{
-                        img{
-                            width:100%;
-                        }
+                        @include display();
+                        width: 100%;
+                        
                     }
+                }
+            }
+        }
+    }
+    }
+    section#agency{
+        padding-top: 100px;
+        .col2{
+            @include display();
+            justify-content: space-around;
+            h5{
+                color: $second-color;
+                padding-bottom: 1rem;
+            }
+            p{
+                line-height: 32px;
+            }
+
+        }
+        .col3{
+            .icon{
+                @include display();
+                justify-content: right;
+                font-size: 1.5rem;
+                
+                i{
+                    background-color: $second-color;
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin-left: 10px;
+                    color: $seven-color;
+                    &:hover{
+                    transform: scale(1.03);
+                    transition: 0.5s;
+                }
+                }
+                
+            }
+        }
+    }
+    section#last{
+        margin-top:100px ;
+        .row{
+            .col1{
+                p{
+                    font-size: 1.3rem;
+                    opacity: 0.7;
+                }
+            }
+            .col2{
+                @include display();
+                justify-content: right;
+                .text2{
+                    @include display();
+                    gap: 20px;
+                    font-size: 1.3rem;
+                    font-weight: 500;
                 }
             }
         }

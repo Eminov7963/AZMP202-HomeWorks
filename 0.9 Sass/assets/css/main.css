@@ -646,6 +646,9 @@ main section#experience .row .content .button button:hover {
   transition: 0.5s;
   transform: scale(1.02);
 }
+main section#experience .row .img img {
+  width: 100%;
+}
 main section#numbers {
   padding: 100px 0px;
 }
@@ -660,45 +663,200 @@ footer {
   padding: 100px 0px;
   background-color: rgb(253, 240, 233);
 }
-footer .container {
+footer section#head .container {
   background-color: rgb(239, 109, 88);
   padding: 50px 0px;
 }
-footer .container .row .col1 {
+footer section#head .container .row .col1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-footer .container .row .col1 .text {
+footer section#head .container .row .col1 .text {
   color: white;
   padding: 0% 6%;
 }
-footer .container .row .col1 .text h2 {
+footer section#head .container .row .col1 .text h2 {
   max-width: 550px;
 }
-footer .container .row .col1 p {
+footer section#head .container .row .col1 p {
   line-height: 32px;
   font-size: 1rem;
   font-family: "Epilogue", sans-serif;
   padding-top: 2%;
 }
-footer .container .row .col1 .button {
+footer section#head .container .row .col1 .button {
   width: 100%;
   padding: 3% 6%;
 }
-footer .container .row .col1 .button button {
+footer section#head .container .row .col1 .button button {
   border: none;
   padding: 20px 30px;
   background-color: white;
   border-radius: 8px;
   font-family: "Epilogue", sans-serif;
+  font-weight: 700;
 }
-footer .container .row .col1 .button button:hover {
+footer section#head .container .row .col1 .button button:hover {
   background-color: orange;
+  transition: 0.5s;
   transform: scale(1.02);
   color: white;
 }
-footer .container .row .col2 .img img img {
+footer section#head .container .row .col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  footer section#head .container .row .col2 {
+    order: -1;
+  }
+}
+footer section#head .container .row .col2 .img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+}
+footer section#agency {
+  padding-top: 100px;
+}
+footer section#agency .col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+footer section#agency .col2 h5 {
+  color: rgb(239, 109, 88);
+  padding-bottom: 1rem;
+}
+footer section#agency .col2 p {
+  line-height: 32px;
+}
+footer section#agency .col3 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: right;
+  font-size: 1.5rem;
+}
+footer section#agency .col3 .icon i {
+  background-color: rgb(239, 109, 88);
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+}
+footer section#agency .col3 .icon i:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+footer section#last {
+  margin-top: 100px;
+}
+footer section#last .row .col1 p {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+footer section#last .row .col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: right;
+}
+footer section#last .row .col2 .text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+main section#portfolio {
+  padding: 40px 0px;
+  background-color: rgb(40, 41, 62);
+}
+main section#portfolio .row .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#portfolio .row .col-12 h1 {
+  text-align: center;
+  color: white;
+}
+main section#portfolio .row .col-12 p {
+  text-align: center;
+  color: rgb(177, 178, 185);
+  line-height: 32px;
+  max-width: 500px;
+}
+main section#img .row1 {
+  padding: 50px 0px;
+}
+main section#img .row1 .text ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 1rem;
+}
+main section#img .row1 .text ul li.show a {
+  color: #391400;
+}
+main section#img .row1 .text ul li:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+main section#img .row1 .text ul li:hover a {
+  color: orange;
+  transition: 0.5s;
+}
+main section#img .row1 .text ul a {
+  text-decoration: none;
+  color: rgb(127, 100, 84);
+}
+main section#img .row2 {
+  padding-bottom: 50px;
+}
+main section#img .row2 .img {
+  position: relative;
+}
+main section#img .row2 .img img {
+  width: 100%;
+  height: 100%;
+}
+main section#img .row2 .img .p {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+main section#img .row2 .img h3 {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  color: white;
+}
+main section#img .row3 .button button {
+  border: none;
+  padding: 20px 30px;
+  background-color: white;
+  font-family: "Epilogue", sans-serif;
+  color: rgb(57, 20, 0);
+  line-height: 14.35px;
+  font-weight: 900;
+  border-radius: 8px;
+}
+main section#img .row3 .button button:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.03);
+  transition: 0.5s;
 }/*# sourceMappingURL=main.css.map */
