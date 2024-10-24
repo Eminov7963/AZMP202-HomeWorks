@@ -1,0 +1,58 @@
+footer{
+    padding: 100px 0px;
+    background-color:$fifth-color ;
+    .container{
+        background-color: $second-color;
+        padding: 50px 0px;
+        .row{
+            .col1{
+                @include display();
+                flex-direction: column;
+                .text{
+                    color: $seven-color;
+                    padding: 0% 6%;
+                    h2{
+                        max-width: 550px;
+                    }
+                }
+                p{
+                    line-height: 32px;
+                    font-size: 1rem;
+                    font-family: "Epilogue", sans-serif;
+                    padding-top: 2%;
+                    
+                }
+                .button{
+                    width: 100%;
+                    padding: 3% 6%;
+                    
+                    button{
+                        border: none;
+                        padding: 20px 30px;
+                        background-color: $seven-color;
+                        border-radius: 8px;
+                        font-family: "Epilogue", sans-serif;
+
+                        &:hover{
+                            background-color: $ten-color;
+                            transform: scale(1.02);
+                            color: $seven-color;
+                            
+                        }
+                    }
+                }
+
+                
+            }
+            .col2{
+                .img{
+                    img{
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

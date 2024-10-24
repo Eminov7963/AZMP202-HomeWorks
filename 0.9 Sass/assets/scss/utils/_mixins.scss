@@ -1,7 +1,7 @@
 @mixin display($justify: center,$aligin: center){
     display: flex;
-    justify-content: justify;
-    align-items: aligin;
+    justify-content: $justify;
+    align-items: $aligin;
 }
 @mixin for-phone-only {
     @media (max-width:512px){

@@ -424,14 +424,14 @@ header .container {
 }
 header .container .row {
   display: flex;
-  justify-content: justify;
-  align-items: aligin;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 header .container .row .img {
   display: flex;
-  justify-content: justify;
-  align-items: aligin;
+  justify-content: center;
+  align-items: center;
 }
 header .container .row nav {
   display: flex;
@@ -521,8 +521,8 @@ main section#head {
 main section#head .container .row .col1 {
   position: relative;
   display: flex;
-  justify-content: justify;
-  align-items: aligin;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 main section#head .container .row .col1 h5 {
@@ -570,8 +570,8 @@ main section#head .container .row .col1 .button .btn2:hover {
 }
 main section#head .container .row .col1 .foot {
   display: flex;
-  justify-content: justify;
-  align-items: aligin;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   column-gap: 20px;
 }
@@ -654,4 +654,51 @@ main section#numbers .row .col-4 {
 }
 main section#numbers .row .col-4 p {
   font-size: 20px;
+}
+
+footer {
+  padding: 100px 0px;
+  background-color: rgb(253, 240, 233);
+}
+footer .container {
+  background-color: rgb(239, 109, 88);
+  padding: 50px 0px;
+}
+footer .container .row .col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .container .row .col1 .text {
+  color: white;
+  padding: 0% 6%;
+}
+footer .container .row .col1 .text h2 {
+  max-width: 550px;
+}
+footer .container .row .col1 p {
+  line-height: 32px;
+  font-size: 1rem;
+  font-family: "Epilogue", sans-serif;
+  padding-top: 2%;
+}
+footer .container .row .col1 .button {
+  width: 100%;
+  padding: 3% 6%;
+}
+footer .container .row .col1 .button button {
+  border: none;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "Epilogue", sans-serif;
+}
+footer .container .row .col1 .button button:hover {
+  background-color: orange;
+  transform: scale(1.02);
+  color: white;
+}
+footer .container .row .col2 .img img img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
