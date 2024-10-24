@@ -70,6 +70,10 @@ footer{
         .col2{
             @include display();
             justify-content: space-around;
+            @include for-phone-only{
+                    justify-content: left;
+                    gap: 40px;
+                }
             h5{
                 color: $second-color;
                 padding-bottom: 1rem;
@@ -84,6 +88,9 @@ footer{
                 @include display();
                 justify-content: right;
                 font-size: 1.5rem;
+                @include for-phone-only{
+                    justify-content: left;
+                }
                 
                 i{
                     background-color: $second-color;
@@ -112,11 +119,15 @@ footer{
             .col2{
                 @include display();
                 justify-content: right;
+                 @include for-phone-only{
+                    justify-content: left;
+                }
                 .text2{
                     @include display();
                     gap: 20px;
                     font-size: 1.3rem;
                     font-weight: 500;
+                    
                 }
             }
         }

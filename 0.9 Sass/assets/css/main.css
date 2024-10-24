@@ -439,7 +439,7 @@ header .container .row nav {
   align-items: center;
   gap: 30px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
   header .container .row nav {
     display: none;
   }
@@ -466,7 +466,7 @@ header .container .row nav ul li a:hover {
   color: yellow;
   transition: 0.6s;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
   header .container .row .button {
     display: none;
   }
@@ -500,7 +500,7 @@ header .container .row .menu:hover {
 header .container .row .menu a {
   color: white;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
   header .container .row .menu {
     display: block;
   }
@@ -578,7 +578,7 @@ main section#head .container .row .col1 .foot {
 main section#head .container .row .col1 .foot .p2 {
   color: white;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
   main section#head .container .col2 {
     order: -1;
   }
@@ -709,7 +709,7 @@ footer section#head .container .row .col2 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
   footer section#head .container .row .col2 {
     order: -1;
   }
@@ -729,6 +729,12 @@ footer section#agency .col2 {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 1023px) {
+  footer section#agency .col2 {
+    justify-content: left;
+    gap: 40px;
+  }
+}
 footer section#agency .col2 h5 {
   color: rgb(239, 109, 88);
   padding-bottom: 1rem;
@@ -742,6 +748,11 @@ footer section#agency .col3 .icon {
   align-items: center;
   justify-content: right;
   font-size: 1.5rem;
+}
+@media (max-width: 1023px) {
+  footer section#agency .col3 .icon {
+    justify-content: left;
+  }
 }
 footer section#agency .col3 .icon i {
   background-color: rgb(239, 109, 88);
@@ -766,6 +777,11 @@ footer section#last .row .col2 {
   justify-content: center;
   align-items: center;
   justify-content: right;
+}
+@media (max-width: 1023px) {
+  footer section#last .row .col2 {
+    justify-content: left;
+  }
 }
 footer section#last .row .col2 .text2 {
   display: flex;
