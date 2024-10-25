@@ -1,167 +1,226 @@
 main {
-    background-color: $fifth-color;
+  background-color: $fifth-color;
   section#head {
     background-color: $first-color;
     padding: 100px 0px;
     .container {
-        
       .row {
         .col1 {
-            position: relative;
-            @include display();
-            flex-direction: column;
+          position: relative;
+          @include display();
+          flex-direction: column;
           h5 {
             color: $second-color;
             text-transform: uppercase;
           }
-          h1{
+          h1 {
             padding: 20px 0px;
             color: $seven-color;
             max-width: 550px;
           }
-          p{
+          p {
             color: $p-color;
             font-size: 1rem;
             max-width: 500px;
-            line-height: 32px   ;
+            line-height: 32px;
           }
-          .star{
+          .star {
             position: absolute;
             top: 5%;
             right: 45%;
           }
-          .button{
+          .button {
             padding: 30px 0px;
-            button{
-                border: none;
-                padding: 20px 30px;
-                cursor: pointer;
-                background-color: $second-color;
-                color: $seven-color;
-                border-radius: 6px;
-                
+            button {
+              border: none;
+              padding: 20px 30px;
+              cursor: pointer;
+              background-color: $second-color;
+              color: $seven-color;
+              border-radius: 6px;
             }
-            .btn1{
-                &:hover{
-                    background-color: $ten-color;
-                    transition: 0.5s;
-                    transform: scale(1.02);
-                }
+            .btn1 {
+              &:hover {
+                background-color: $ten-color;
+                transition: 0.5s;
+                transform: scale(1.02);
+              }
             }
-            .btn2{
-                background-color: transparent;
-                &:hover{
-                    background-color: $third-color;
-                    transition: 0.5s;
-
-                }
-                // margin: 1rem;
-                
+            .btn2 {
+              background-color: transparent;
+              &:hover {
+                background-color: $third-color;
+                transition: 0.5s;
+              }
+              // margin: 1rem;
             }
           }
-          .foot{
+          .foot {
             @include display();
-            margin-top: 100px ;
+            margin-top: 100px;
             column-gap: 20px;
-            .p2{
-                color: $seven-color;
+            .p2 {
+              color: $seven-color;
             }
-
           }
         }
       }
-      .col2{
-        @include for-phone-only{
-          order: -1;
-
-
-        }
-        @include for-phone-up-only{
+      .col2 {
+        @include for-phone-only {
           order: -1;
         }
-        .img{
-       
-            img{
-                width: 100%;
-            }
+        @include for-phone-up-only {
+          order: -1;
         }
-      }
-    }
-  }
-  section#img{
-    padding: 50px 0px;
-    .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-          .img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover{
-                transform: scale(1.05);
-            }
-          }
-        
-    }
-  }
-  section#experience{
-    padding: 100px 0px;
-    .row{
-        .content{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            h5{
-                color: $second-color;
-            }
-            h2{
-                padding: 20px 0px;
-            }
-            p{
-                padding: 20px 0px;
-                font-family: "Epilogue", sans-serif;
-
-                line-height: 32px;
-            }
-            .button{
-                width: 100%;
-                button{
-                    text-transform: uppercase;
-                    font-family: "Epilogue", sans-serif;
-                    border: none;
-                    padding: 15px 30px;
-                    color: $sixth-color;
-                    font-size: 1rem;
-                    border-radius: 8px;
-                    background-color: $seven-color;
-                    &:hover{
-                        background-color: $ten-color;
-                        color: $seven-color;
-                        transition: 0.5s;
-                        transform: scale(1.02);
-                    }
-
-                }
-            }
-        }
-        .img{
-          img{
+        .img {
+          img {
             width: 100%;
           }
         }
+      }
     }
   }
-  section#numbers{
-    padding: 100px 0px ;
-    .row{
-        .col-4{
-            border: 2px solid $ileven-color;
-            p{
-                font-size: 20px;
-            }
+  section#img {
+    padding: 50px 0px;
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          transform: scale(1.05);
         }
+      }
+    }
+  }
+  section#experience {
+    padding: 100px 0px;
+    .row {
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h5 {
+          color: $second-color;
+        }
+        h2 {
+          padding: 20px 0px;
+        }
+        p {
+          padding: 20px 0px;
+          font-family: "Epilogue", sans-serif;
+
+          line-height: 32px;
+        }
+        .button {
+          width: 100%;
+          button {
+            text-transform: uppercase;
+            font-family: "Epilogue", sans-serif;
+            border: none;
+            padding: 15px 30px;
+            color: $sixth-color;
+            font-size: 1rem;
+            border-radius: 8px;
+            background-color: $seven-color;
+            &:hover {
+              background-color: $ten-color;
+              color: $seven-color;
+              transition: 0.5s;
+              transform: scale(1.02);
+            }
+          }
+        }
+      }
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  section#numbers {
+    padding: 100px 0px;
+    .row {
+      .col-4 {
+        border: 2px solid $ileven-color;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+main {
+  background-color: $fifth-color;
+  .container {
+    .main {
+      .main-boxes {
+        @include display();
+        flex-wrap: wrap;
+        padding: 3rem 3rem;
+        .boxes1 {
+          border: 1px solid $second-color;
+          width: 586px;
+          height: 176px;
+          padding: 3rem 3rem;
+          @include display();
+          img {
+            background-color: $second-color;
+            padding: 20px 20px;
+          }
+          .main-boxes-text {
+            padding: 0 2rem;
+            p {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+      h5 {
+        text-align: center;
+      }
+      .video-reel {
+        @include display();
+        flex-direction: column;
+        gap: 1.5rem;
+        .video-reel-img {
+          max-width: 100%;
+        }
+        p {
+          max-width: 570px;
+          line-height: 32px;
+        }
+        h3 {
+          max-width: 570px;
+          color: $sixth-color;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .founder-words {
+padding-top: 100px;
+        
+       @include display();
+       flex-direction: column;
+       gap: 1rem;
+        h3 {
+          max-width: 550px;
+          color: $sixth-color;
+        }
+       .founder-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: left;
+       }
+      }
     }
   }
   section#aboutme{
