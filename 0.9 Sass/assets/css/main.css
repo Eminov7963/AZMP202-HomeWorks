@@ -659,6 +659,64 @@ main section#numbers .row .col-4 {
 main section#numbers .row .col-4 p {
   font-size: 20px;
 }
+main section#aboutme {
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px 100px 0px;
+}
+main section#aboutme .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+main section#aboutme .text p {
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.7;
+  max-width: 500px;
+  line-height: 32px;
+  font-family: "Epilogue", sans-serif;
+}
+main section#img-gab {
+  padding: 100px 0px;
+}
+main section#img-gab .row1 .col-12 {
+  text-align: center;
+}
+main section#img-gab .row1 .col-12 img {
+  width: 80%;
+}
+main section#img-gab .row2 .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#img-gab .row2 .col-12 .text {
+  max-width: 650px;
+}
+main section#img-gab .row2 .col-12 .text h5 {
+  color: rgb(239, 109, 88);
+  padding-bottom: 10px;
+}
+main section#img-gab .row2 .col-12 .text h2 {
+  color: rgb(57, 20, 0);
+  padding-bottom: 30px;
+}
+main section#img-gab .row2 .col-12 .text p.p1 {
+  line-height: 32px;
+  font-family: "Epilogue", sans-serif;
+  opacity: 0.8;
+  padding-bottom: 40px;
+}
+main section#img-gab .row2 .col-12 .text p {
+  line-height: 32px;
+  font-family: "Epilogue", sans-serif;
+  opacity: 0.8;
+}
 
 main {
   background-color: rgb(253, 240, 233);
