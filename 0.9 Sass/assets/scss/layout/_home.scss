@@ -164,4 +164,62 @@ main {
         }
     }
   }
+  section#aboutme{
+    background-color: $first-color;
+    @include display();
+    padding: 70px 0px 100px 0px;
+    .text{
+      @include display();
+      flex-direction: column;
+      color: $seven-color;
+        p{
+          text-align: center;
+          padding-top: 20px;
+          opacity: 0.7;
+          max-width: 500px;
+          line-height: 32px;
+          font-family: "Epilogue", sans-serif;
+        }
+
+    }
+  }
+  section#img-gab{
+    padding: 100px 0px;
+    .row1{
+      .col-12{
+        text-align: center;
+        img{
+          width: 80%
+        }
+      }
+    }
+    .row2{
+      .col-12{
+        @include display();
+        .text{
+          max-width: 650px;
+          h5{
+            color: $second-color;
+            padding-bottom: 10px;
+          }
+          h2{
+            color: $sixth-color;
+            padding-bottom: 30px;
+          }
+          p.p1{
+            line-height: 32px;
+            font-family: "Epilogue", sans-serif;
+            opacity: 0.8;
+            padding-bottom: 40px;
+          }
+          p{
+            line-height: 32px;
+            font-family: "Epilogue", sans-serif;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
 }
