@@ -94,6 +94,7 @@ h5 {
   line-height: 32px;
   letter-spacing: 3px;
   text-align: left;
+  color: #EF6D58;
 }
 
 h6 {
@@ -657,6 +658,79 @@ main section#numbers .row .col-4 {
 }
 main section#numbers .row .col-4 p {
   font-size: 20px;
+}
+
+main {
+  background-color: rgb(253, 240, 233);
+}
+main .container .main .main-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 3rem;
+}
+main .container .main .main-boxes .boxes1 {
+  border: 1px solid rgb(239, 109, 88);
+  width: 586px;
+  height: 176px;
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .main .main-boxes .boxes1 img {
+  background-color: rgb(239, 109, 88);
+  padding: 20px 20px;
+}
+main .container .main .main-boxes .boxes1 .main-boxes-text {
+  padding: 0 2rem;
+}
+main .container .main .main-boxes .boxes1 .main-boxes-text p {
+  padding: 1rem 0;
+}
+main .container .main h5 {
+  text-align: center;
+}
+main .container .main .video-reel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .container .main .video-reel .video-reel-img {
+  max-width: 100%;
+}
+main .container .main .video-reel p {
+  max-width: 570px;
+  line-height: 32px;
+}
+main .container .main .video-reel h3 {
+  max-width: 570px;
+  color: rgb(57, 20, 0);
+}
+main .container .main .video-reel img {
+  width: 100%;
+}
+main .container .main .founder-words {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .container .main .founder-words h3 {
+  max-width: 550px;
+  color: rgb(57, 20, 0);
+}
+main .container .main .founder-words .founder-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: left;
 }
 
 footer {
