@@ -116,7 +116,7 @@ h6 {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -716,6 +716,104 @@ main section#img-gab .row2 .col-12 .text p {
   line-height: 32px;
   font-family: "Epilogue", sans-serif;
   opacity: 0.8;
+}
+main section#blog {
+  padding: 70px 0px 100px;
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#blog .text {
+  text-align: center;
+}
+main section#blog .text p {
+  color: rgb(178, 178, 186);
+  line-height: 32px;
+  max-width: 500px;
+}
+main section#blog .text h1 {
+  text-align: center;
+  color: white;
+}
+main section#performance {
+  padding: 100px 0px;
+}
+main section#performance .row .col-6 {
+  flex-direction: column;
+}
+main section#performance .row .col-6 img {
+  width: 100%;
+}
+main section#performance .row .col-6 .text p {
+  font-size: 20px;
+  color: rgb(127, 100, 84);
+  padding: 20px 0px;
+  font-family: "Epilogue", sans-serif;
+}
+main section#stories .row1 .col-4 .img {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 224px;
+}
+main section#stories .row1 .col-4 .img img {
+  height: 100%;
+  transition: 0.5s;
+  width: 100%;
+}
+main section#stories .row1 .col-4 .img img:hover {
+  transform: scale(1.1);
+}
+main section#stories .row1 .col-4 .text p {
+  font-size: 20px;
+  color: rgb(127, 100, 84);
+  padding: 20px 0px;
+  font-family: "Epilogue", sans-serif;
+}
+main section#stories .row1 .col-4 .text h4 {
+  max-width: 400px;
+}
+main section#stories .row2 .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#stories .row2 .col-12 .button button {
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 8px;
+  color: rgb(57, 20, 0);
+  transition: 0.5s;
+}
+main section#stories .row2 .col-12 .button button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+main section#news {
+  padding: 100px 0px;
+}
+main section#news .row .col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main section#news .row .col2 .input input {
+  padding: 10px 30px;
+}
+main section#news .row .col2 .button button {
+  border: none;
+  background-color: white;
+  color: #391400;
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+main section#news .row .col2 .button button:hover {
+  background-color: orange;
+  transform: scale(1.1);
 }
 
 footer {

@@ -221,5 +221,129 @@ main {
       }
     }
   }
+  section#blog{
+    padding: 70px 0px 100px;
+    background-color: $first-color;
+    @include display();
+    .text{
+      text-align: center;
+      p{
+        color: $fourthin-color;
+        line-height: 32px;
+        max-width: 500px;
+        
+      }
+      h1{
+        text-align: center;
+        color: $seven-color;
+      }
+    }
+  }
+  section#performance{
+    padding: 100px 0px;
+    .row{
+      .col-6{
+        
+        flex-direction: column;
+        
+          img{
+            width: 100%;
+          }
+        
+        .text{
+          p{
+            font-size: 20px;
+            color: $twelf-color;
+            padding: 20px 0px;
+            font-family: "Epilogue", sans-serif;
+          }
+        }
+      }
+    }
+  }
+  section#stories{
+    .row1{
+      .col-4{
+        .img{
+          overflow: hidden;
+          border-radius: 8px;
+          height: 224px;
+          
+          img{
+            height: 100%;
+            transition: 0.5s;
+            width: 100%;
+            &:hover{
+              transform: scale(1.1);
+            }
+          }
+        }
+        .text{
+          p{
+            font-size: 20px;
+            color: $twelf-color;
+            padding: 20px 0px;
+            font-family: "Epilogue", sans-serif;
+          }
+          h4{
+            max-width: 400px;
+          }
+        }
+
+      }
+    }
+    .row2{
+      .col-12{
+        @include display();
+        .button{
+          
+          
+          button{
+            border: none;
+            font-size: 1.5rem;
+            padding: 20px 40px;
+            background-color: $seven-color;
+            border-radius: 8px;
+            color:$sixth-color;
+            transition: 0.5s;
+            &:hover{
+              background-color:$ten-color ;
+              transform: scale(1.1);
+
+            }
+          }
+        }
+      }
+    }
+  }
+  section#news{
+    padding: 100px 0px;
+    .row{
+      .col2{
+        @include display();
+        gap: 30px;
+        .input{
+          input{
+            padding: 10px 30px;
+          }
+
+        }
+        .button{
+          button{
+            border: none;
+            background-color:$seven-color ;
+            color:$thirtin-color ;
+            padding: 10px 30px;
+            border-radius: 8px;
+            transition: 0.5s;
+            &:hover{
+              background-color:$ten-color ;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
