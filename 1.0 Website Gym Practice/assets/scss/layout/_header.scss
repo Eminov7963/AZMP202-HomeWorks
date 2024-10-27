@@ -1,0 +1,117 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+    .container{
+        @include display();
+        flex-direction: column;
+        position: relative;
+        .row{
+            width: 100%;
+            @include display();
+        
+          
+        
+        
+        .box1{
+            padding: 20px 0px;
+            @include display();
+            justify-content: space-between;
+            width: 100%;
+            @include for-tablet-only{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+            
+            
+            .menu{
+                display: none;
+                transition: 0.5s;
+                cursor: pointer;
+                font-size: 1.5rem;
+                padding-right: 20px;
+                &:hover{
+                    color:$fourth-color;
+                }
+                @include for-tablet-only{
+                    display: block;
+                    
+                }
+                
+            }
+            span{
+                font-family: "Poppins", sans-serif;
+                width: 20%;
+                line-height: 22px;
+                font-size: 14px;
+                font-weight: 600;
+                @include for-tablet-only{
+                    display: none
+                }
+            }
+            
+            .contact{
+                @include for-tablet-only{
+                    display: none
+                }
+                @include display();
+                gap: 30px;
+                
+                a{
+                    color: $first-color;
+                    text-decoration: none;
+                    font-family: "Poppins", sans-serif;
+                }
+                i{
+                    background-color: $fourth-color;
+                    color: $third-color;
+                    padding: 30px 30px;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.03);
+                        
+                    }
+                    
+                }
+
+            }
+        }
+        
+        .box2{
+            padding: 30px 0px;
+            @include for-phone-up-only{
+                    display: none;
+                    
+                }
+            .nav{
+                ul{
+                    font-family: "Poppins", sans-serif;
+                    @include display();
+                    gap: 20px;
+                    a{
+                        color: $first-color;
+                        text-decoration: none;
+                        transition: 0.5s;
+                        &:hover{
+                            color: $fourth-color;
+                            
+                        }
+
+                    }
+                    a.home{
+                        color: $fourth-color;
+                    }
+                    
+                }
+            }
+        }
+        
+        }
+    }   
+}
