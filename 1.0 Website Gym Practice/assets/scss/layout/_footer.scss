@@ -1,0 +1,93 @@
+footer{
+    .row1{
+        .col-3{
+            p{
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: 14px;
+                color: $six-color;
+                line-height: 22.75px;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+        .col-4{
+            p{
+                margin: 10px 0px;
+                font-weight: 300;
+                font-size: 14px;
+                color: $six-color;
+                line-height: 22.75px;
+                font-family: "Poppins", sans-serif;
+            }
+            p.num{
+                font-weight: 600;
+                font-size: 24px;
+                color: $fourth-color;
+                line-height: 30px;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+        .col-5{
+            p{
+                margin: 10px 0px;
+                font-weight: 300;
+                font-size: 14px;
+                color: $six-color;
+                line-height: 22.75px;
+                font-family: "Poppins", sans-serif;
+            }
+            .input{
+                position: relative;
+                input{
+                    border-radius: 30px;
+                    font-size: 1rem;
+                    background-color: $eight-color;
+                    padding: 10px 5px 10px 5px;
+                    width: 60%;
+                    
+                }
+                i{
+                    position: absolute;
+                    font-size: 1.3rem;
+                    top: 15%;
+                    right: 45%;
+                    background-color: $fourth-color;
+                    color: $third-color;
+                    border-radius: 30px;
+                    padding: 5px 16px;
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+    .row2{
+        padding-bottom: 30px;
+        .col1{
+            @include display();
+            a{
+                text-decoration: none;
+                color: $fourth-color;
+            }
+        }
+        .icon{
+            text-align: right;
+            i{
+                background-color: $first-color;
+                padding: 10px;
+                margin-right: 5px;
+                color: $third-color;
+                font-size: 0.7rem;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    background-color: $fourth-color;
+
+                }
+            }
+            @include for-phone-up-only{
+                text-align: center;
+            }
+        }
+    }
+}

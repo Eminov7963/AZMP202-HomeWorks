@@ -52,6 +52,14 @@ table {
   border-spacing: 0;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  line-height: 21.6px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -790,4 +798,451 @@ main section#revolutions .box .text .content p {
   color: rgb(119, 119, 119);
   line-height: 22.75px;
   font-family: "Poppins", sans-serif;
+}
+main section#list {
+  padding: 100px 0px;
+}
+main section#list .row1 {
+  padding: 100px 0px 50px;
+}
+main section#list .row1 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section#list .row1 .text h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(34, 34, 34);
+  line-height: 43, 2px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main section#list .row1 .text p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #777777;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+main section#list .row2 .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#list .row2 .col-12 table {
+  font-size: 1.5rem;
+}
+main section#list .row2 .col-12 table thead th {
+  border: 1px solid #777777;
+  text-align: center;
+  padding: 10px 70px;
+  text-transform: uppercase;
+  background-color: #E9ECEF;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  line-height: 22.75px;
+}
+main section#list .row2 .col-12 table tbody tr {
+  transition: 0.4s;
+}
+main section#list .row2 .col-12 table tbody tr:hover {
+  color: red;
+  background-color: #F6214B;
+}
+main section#list .row2 .col-12 table tbody td {
+  text-align: center;
+  border: 1px solid #777777;
+  padding: 10px 70px;
+  text-transform: uppercase;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 22.75px;
+}
+main section#trainers {
+  padding: 50px 0px;
+  background-color: #F9F9FF;
+}
+main section#trainers .row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 50px;
+}
+main section#trainers .row1 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section#trainers .row1 .text h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(34, 34, 34);
+  line-height: 43, 2px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main section#trainers .row1 .text p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #777777;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+main section#trainers .row2 .col-3 .cards {
+  position: relative;
+}
+main section#trainers .row2 .col-3 .cards .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #F6214B;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: white;
+  transition: 0.4s;
+}
+main section#trainers .row2 .col-3 .cards .overlay a {
+  padding: 0px 10px;
+  color: white;
+}
+main section#trainers .row2 .col-3 .cards .overlay:hover {
+  opacity: 0.7;
+}
+@media (max-width: 912px) {
+  main section#trainers .row2 .col-3 .cards .overlay {
+    height: 89.5%;
+  }
+}
+@media (max-width: 767px) {
+  main section#trainers .row2 .col-3 .cards .overlay {
+    height: 94%;
+  }
+}
+@media (max-width: 512px) {
+  main section#trainers .row2 .col-3 .cards .overlay {
+    height: 90%;
+  }
+}
+main section#trainers .row2 .col-3 .cards img {
+  width: 100%;
+  height: 100%;
+}
+main section#trainers .row2 .col-3 .cards img:hover {
+  opacity: 1;
+}
+main section#trainers .row2 .col-3 .cards h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+main section#trainers .row2 .col-3 .cards p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #777777;
+}
+main section#plans {
+  padding: 30px 0px;
+}
+main section#plans .row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 50px;
+}
+main section#plans .row1 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section#plans .row1 .text h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(34, 34, 34);
+  line-height: 43, 2px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main section#plans .row1 .text p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #777777;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+main section#plans .row2 .col-4 .cards {
+  background-color: #F9F9FF;
+}
+main section#plans .row2 .col-4 .cards .card1 {
+  padding: 20px 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9ECEF;
+}
+main section#plans .row2 .col-4 .cards .card1 h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  line-height: 21.6px;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card1 p {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card1 h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(34, 34, 34);
+  line-height: 43.2px;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card2-3 {
+  padding: 20px 30px;
+  transition: 0.4s;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card2 {
+  padding: 20px 0px;
+  border-bottom: 1px solid #E9ECEF;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card2 p {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card3 nav li {
+  padding: 20px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card3 .button {
+  background-color: black;
+  width: 70%;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card3 .button button {
+  background-color: black;
+  border: none;
+  padding: 3px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+main section#plans .row2 .col-4 .cards .card2-3 .card3 .button i {
+  color: white;
+}
+main section#plans .row2 .col-4 .cards .card2-3:hover {
+  background-color: #F6214B;
+  color: white;
+}
+main section#plans .row2 .col-4 .cards .card2-3:hover button {
+  background-color: #F6214B;
+}
+main section#img {
+  padding: 50px 0px;
+}
+main section#img .row .col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main section#img .row .col-2 img {
+  cursor: pointer;
+  transition: 0.4s;
+}
+main section#img .row .col-2 img:hover {
+  transform: scale(1.1);
+}
+main section#back-image-last {
+  position: relative;
+  padding: 100px 0px;
+  margin: 70px 0px;
+  background-image: url(https://preview.colorlib.com/theme/gym/img/callto-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section#back-image-last .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  main section#back-image-last {
+    margin-top: auto;
+  }
+}
+@media (max-width: 912px) {
+  main section#back-image-last {
+    margin-top: auto;
+  }
+}
+main section#back-image-last .row .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+main section#back-image-last .row .col-12 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  font-weight: 600;
+  max-width: 670px;
+  text-align: center;
+  padding-bottom: 15px;
+  z-index: 2;
+}
+main section#back-image-last .row .col-12 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22.75px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+main section#back-image-last .row .col-12 button {
+  margin-top: 10px;
+  border: 1px solid #F6214B;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #F6214B;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main section#back-image-last .row .col-12 button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+footer .row1 .col-3 p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+footer .row1 .col-4 p {
+  margin: 10px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+footer .row1 .col-4 p.num {
+  font-weight: 600;
+  font-size: 24px;
+  color: #F6214B;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+footer .row1 .col-5 p {
+  margin: 10px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 22.75px;
+  font-family: "Poppins", sans-serif;
+}
+footer .row1 .col-5 .input {
+  position: relative;
+}
+footer .row1 .col-5 .input input {
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: #F9F9FF;
+  padding: 10px 5px 10px 5px;
+  width: 60%;
+}
+footer .row1 .col-5 .input i {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 15%;
+  right: 45%;
+  background-color: #F6214B;
+  color: white;
+  border-radius: 30px;
+  padding: 5px 16px;
+  cursor: pointer;
+}
+footer .row2 {
+  padding-bottom: 30px;
+}
+footer .row2 .col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row2 .col1 a {
+  text-decoration: none;
+  color: #F6214B;
+}
+footer .row2 .icon {
+  text-align: right;
+}
+footer .row2 .icon i {
+  background-color: black;
+  padding: 10px;
+  margin-right: 5px;
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+footer .row2 .icon i:hover {
+  background-color: #F6214B;
+}
+@media (max-width: 767px) {
+  footer .row2 .icon {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

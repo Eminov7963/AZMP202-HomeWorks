@@ -306,4 +306,366 @@ main{
             }
         }
     }
+    section#list{
+        padding: 100px 0px;
+        .row1{
+                padding: 100px 0px 50px;
+                .text{
+                @include display();
+                flex-direction: column;
+                
+                h1{
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: $fifth-color;
+                    line-height: 43,2px;
+                    font-family: "Poppins", sans-serif;
+                    padding-bottom: 10px;
+                    text-align: center;
+
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: $p-color;
+                    line-height: 22px;
+                    font-family: "Poppins", sans-serif;
+                    text-align: center; 
+                }
+            }
+            }
+        .row2{
+            .col-12{
+                @include display();
+                table{
+                    font-size: 1.5rem;
+                    thead{
+                        th{
+                            border: 1px solid $p-color;
+                            text-align: center;
+                            padding: 10px 70px;
+                            text-transform: uppercase;
+                            background-color: $list-color;
+                            font-size: 14px;
+                            font-weight: 700;
+                            font-family: "Poppins", sans-serif;
+                            line-height: 22.75px;
+                        }
+                    }
+                    tbody{
+                        tr{
+                            transition: 0.4s;
+                            &:hover{
+                                color: $second-color;
+                                background-color: $fourth-color;
+                            }
+                        }
+                        td{
+                            text-align: center;
+                            border: 1px solid $p-color;
+                            padding: 10px 70px;
+                            text-transform: uppercase;
+                            background-color: $third-color;
+                            font-size: 14px;
+                            font-weight: 300;
+                            font-family: "Poppins", sans-serif;
+                            line-height: 22.75px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    section#trainers{
+        padding: 50px 0px;
+        background-color: $eight-color;
+        .row1{
+                @include display();
+                padding: 100px 0px 50px;
+                .text{
+                @include display();
+                flex-direction: column;
+                
+                h1{
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: $fifth-color;
+                    line-height: 43,2px;
+                    font-family: "Poppins", sans-serif;
+                    padding-bottom: 10px;
+                    text-align: center;
+
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: $p-color;
+                    line-height: 22px;
+                    font-family: "Poppins", sans-serif;
+                    text-align: center; 
+                }
+            }
+            }
+        .row2{
+            .col-3{
+                .cards{
+                    position: relative;
+                    .overlay{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: $fourth-color;
+                        width: 100%;
+                        height: 85%;
+                        @include display();
+                        opacity: 0;
+                        color: $third-color;
+                        transition: 0.4s;
+                        a{
+                            padding: 0px 10px;
+                            color: $third-color;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                        @include for-tablet-only{
+                            height: 89.5%;
+                        }
+                        @include for-phone-up-only{
+                            height: 94%;
+                        }
+                        @include for-phone-only{
+                            height: 90%;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    h3{
+                        @include display();
+                        padding: 10px 0px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        font-family: "Poppins", sans-serif;
+                        color: $seven-color;
+                    }
+                    p{
+                        @include display();
+                        font-weight: 300;
+                        font-size: 14px;
+                        font-family: "Poppins", sans-serif;
+                        color: $p-color;
+                    }
+                }
+                
+            }
+        }    
+    }
+    section#plans{
+        padding: 30px 0px;
+        .row1{
+                @include display();
+                padding: 100px 0px 50px;
+                .text{
+                @include display();
+                flex-direction: column;
+                
+                h1{
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: $fifth-color;
+                    line-height: 43,2px;
+                    font-family: "Poppins", sans-serif;
+                    padding-bottom: 10px;
+                    text-align: center;
+
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: $p-color;
+                    line-height: 22px;
+                    font-family: "Poppins", sans-serif;
+                    text-align: center; 
+                }
+            }
+            }
+        .row2{
+            .col-4{
+                .cards{
+                    background-color: $eight-color;
+                    
+                    .card1{
+                        padding: 20px 30px;
+                        padding: 20px;
+                        @include display();
+                        justify-content: space-between;
+                        border-bottom: 1px solid $list-color;
+                        h4{
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: $fifth-color;
+                            line-height: 21.6px;
+                            font-family: "Poppins", sans-serif;
+                        }
+                        p{
+                            font-weight: 300;
+                            font-size: 14px;
+                            color: $six-color;
+                            line-height: 22.75px;
+                            font-family: "Poppins", sans-serif;
+                        }
+                        h1{
+                            font-weight: 600;
+                            font-size: 36px;
+                            color: $fifth-color;
+                            line-height: 43.2px;
+                            font-family: "Poppins", sans-serif;
+                        }
+                    }
+                    .card2-3{
+                        padding: 20px 30px;
+                        .card2{
+                            padding: 20px 0px;
+                            border-bottom: 1px solid $list-color;
+                            p{
+                                font-weight: 300;
+                                font-size: 14px;
+                                color: $six-color;
+                                line-height: 22.75px;
+                                font-family: "Poppins", sans-serif;
+                        }
+                        }
+                        .card3{
+                            nav{
+                                li{
+                                    padding: 20px 0px;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    color: $six-color;
+                                    line-height: 22.75px;
+                                    font-family: "Poppins", sans-serif;
+                                }
+                            }
+                            .button{
+                                background-color: $first-color;
+                                width: 70%;
+                                button{
+                                    background-color: $first-color;
+                                    border: none;
+                                    padding: 3px 20px;
+                                    color: $third-color;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 42px;
+                                    text-transform: uppercase;
+                                    font-family: "Poppins", sans-serif;
+                                }
+                                i{
+                                    color: $third-color;
+                                }
+                            }
+                        }
+                        transition: 0.4s;
+                        &:hover{
+                            background-color: $fourth-color;
+                            color: $third-color;
+                            button{
+                                background-color: $fourth-color;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }    
+    }
+    section#img{
+        padding: 50px 0px;
+        .row{
+            .col-2{
+                @include display();
+                gap: 20px;
+                img{
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+                
+            
+        }
+    }
+    section#back-image-last{
+        position: relative; 
+        .overlay{
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        padding: 100px 0px;
+        margin: 70px 0px;
+        background-image: url(https://preview.colorlib.com/theme/gym/img/callto-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include for-phone-up-only{
+            margin-top: auto;    
+        }
+        @include for-tablet-only{
+            margin-top: auto;    
+        }
+        .row{
+            .col-12{
+                @include display();
+                flex-direction: column ;
+                color: $third-color;
+                h1{
+                    font-family: "Poppins", sans-serif;
+                    font-size: 36px;
+                    line-height: 43px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    max-width: 670px;
+                    text-align: center;
+                    padding-bottom: 15px;
+                    z-index: 2;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 22.75px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    z-index: 2; 
+                }
+                button{
+                    margin-top: 10px;
+                    border: 1px solid $fourth-color;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    background-color: $fourth-color;
+                    color: $third-color;
+                    z-index: 2;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid $third-color;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
