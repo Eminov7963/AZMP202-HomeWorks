@@ -105,3 +105,108 @@
 //     if(i > 3 && i % )
     
 // }
+
+// Exstra
+// Task1
+// for (let i = 2; i < 100; i++) {
+//     let isPrime = true;
+//     for (let j = 2; j < i; j++) {
+//         if(i % j === 0){
+//             isPrime = false;
+//             break;
+//         }
+//         // else{
+//         //     isPrime = true;
+//         // }
+        
+        
+//     }
+//     if(isPrime){
+//         console.log(i);
+        
+//     }
+   
+    
+    
+// }
+
+// Task2
+// const products = [
+//   {
+//     id: 1,
+//     title: "Smartphone",
+//     description: "A high-end smartphone with the latest features.",
+//     price: 799.99,
+//   },
+//   {
+//     id: 2,
+//     title: "Laptop",
+//     description: "Powerful laptop with a large screen and fast processor.",
+//     price: 1299.99,
+//   },
+//   {
+//     id: 3,
+//     title: "Coffee Maker",
+//     description: "An automatic coffee maker with a built-in grinder.",
+//     price: 99.99,
+//   },
+//   {
+//     id: 4,
+//     title: "Headphones",
+//     description: "Wireless over-ear headphones with noise-cancellation.",
+//     price: 199.99,
+//   },
+//   {
+//     id: 5,
+//     title: "Smart TV",
+//     description: "55-inch 4K Smart TV with streaming apps built-in.",
+//     price: 699.99,
+//   },
+// ];
+// let sum = 0;
+// for (let i = 0; i < products.length; i++) {
+//   sum += products[i].price;
+  
+// }
+// console.log(sum);
+// let ededi_orta = sum / products.length;
+// console.log(`ededi-orta: ${ededi_orta}`);
+
+// 9) Daxil olunan ədədin array-də olub olmadığını təyin edən proqram tərtib edin.
+// let num = +prompt("ededi daxil edin");
+// let array = [4, 2, 7, 9, 3, 12, 46, 32, 19];
+// let prime = false;
+// for (let i = 0; i < array.length; i++) {
+//   if(num === array[i]){
+//     prime = true;
+//     console.log(`bele bir eded var: ${num}`);
+//     break;
+//   }
+
+// }
+// if (!prime){
+//     console.log("bele bir eded yoxdur");
+    
+// }
+
+// 10)tələbələr array-ində tələbələrin ortalaması ən yüksək olanı, ortalaması 90-dan yuxarı olanları tapan proqram yazın
+//  const students = [
+//    { name: "Ali", scores: [90, 85, 92] },
+//    { name: "Mammal", scores: [75, 80, 85] },
+//    { name: "Camil", scores: [90, 95, 85] },
+//    { name: "Davud", scores: [100, 100, 100] },
+//  ];
+//  let ortalama= 0 ;
+//  let sum = 0;
+
+// for (let i = 0; i < students.length; i++) {
+//     for (let j = 0; j < students[i].scores.length; j++) {
+//       sum += students[i].scores[j];
+//       console.log(sum);
+      
+      
+//     }
+    
+
+    
+// }
