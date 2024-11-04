@@ -16,13 +16,13 @@
 // Expected Output:
 // [20, 30, 10, 40, 50]
 // function position(array, index,move){
-//     let price = array[index]
-//     array.splice(index,1)
-//     array.splice(move, 0 , price)
-//     return array;
-    
+    // let price = array[index]
+    // array.splice(index,1)
+    // array.splice(move, 0 , price)
+    // return array;
+// 
 // }
-// console.log(position([10, 20, 30, 40, 50], 0, 2));
+// console.log(position(["a", "b", "c", "d"], 0, 2));
 
 // 3.Daxil edilən arraydə təkrarlanan elementi silən və yeni array qaytaran funksiya yazın.
 // Məsələn:
@@ -64,11 +64,11 @@
 // Expected Output:
 // "A Short Sentence"
 // function word (sentence){
-//     const words = sentence.split(" ") 
-//     for (let i = 0; i < words.length; i++) {
-//         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
-//     }
-//     return words.join(" "); 
+    // const words = sentence.split(" ") 
+    // for (let i = 0; i < words.length; i++) {
+        // words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
+    // }
+    // return words.join(" "); 
 // }
 // const sentence = prompt("cumleni daxil edin")
 // console.log(word(sentence));
@@ -133,17 +133,17 @@
 // console.log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
 // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false])); -> ['a', 2, 'd', 14, 's', false]
     // function clearDuplicate(array){
-    //     let clearreturn = [];
-    //     for (let i = 0; i < array.length; i++) {
-    //         for (let j = i+1; j < array.length; j++) {
-    //             if(array[i] == array[j]){
-    //                 clearreturn = array.splice(j,1);
-
-    //             }
-                
-    //         }        
-    //     }
-    //     return array;
+        // let clearreturn = [];
+        // for (let i = 0; i < array.length; i++) {
+            // for (let j = i+1; j < array.length; j++) {
+                // if(array[i] == array[j]){
+                    // clearreturn = array.splice(j,1);
+// 
+                // }
+                // 
+            // }        
+        // }
+        // return array;
     // }
     // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false]));
 
