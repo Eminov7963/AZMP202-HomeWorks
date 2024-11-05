@@ -232,7 +232,7 @@
 //   return new_itCompanies;
 // }
 // console.log(
-//   slices([
+//   slices([   
 //     "Facebook",
 //     "Google",
 //     "Microsoft",
