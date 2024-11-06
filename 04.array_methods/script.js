@@ -312,3 +312,164 @@ const products = [
 // });
 
 // console.log(new_product);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+
+let arr = [
+  {
+    name: "test",
+    key: 1,
+  },
+  {
+    name: "task",
+    key: 2,
+  },
+  {
+    name: "tanqo",
+    key: 3,
+  },
+  {
+    name: "like",
+    key: 4,
+  },
+  {
+    name: "task",
+    key: 5,
+  },
+  {
+    name: "trust",
+    key: 6,
+  },
+  {
+    name: "test",
+    key: 7,
+  },
+  {
+    name: "last",
+    key: 8,
+  },
+  {
+    name: "tanqo",
+    key: 9,
+  },
+  {
+    name: "elephant",
+    key: 10,
+  },
+  {
+    name: "love",
+    key: 11,
+  },
+  {
+    name: "small",
+    key: 12,
+  },
+  {
+    name: "little",
+    key: 13,
+  },
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1) "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin (filter)
+// let new_arr = arr.filter((element)=>{
+//   return element.name[0] === "t" && element.name[element.name.length -1] === "t";
+// })
+// console.log(new_arr);
+
+// 2) "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin (forEach)
+// let count = 0;
+// let new_arr = arr.forEach((element)=>{
+//   if (  element.name[0] === "t" && element.name[element.name.length -1] === "t") {
+//     count ++;
+//   }
+// })
+// console.log(count);
+
+// 3) "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key
+// "lerinin cemini tapin
+
+// let new_arr = arr.reduce((sum ,element)=>{
+//   if (  element.name[0] === "t" && element.name[element.name.length -1] === "t") {
+//     sum += element.key;
+//   }
+//   return sum;
+// },0)
+// console.log(new_arr);
+
+// 4) "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
+// let new_arr = arr.filter((element)=>{
+//   if (element.name[element.name.length -1] === "e") {
+//     element.name = "SuperDev";
+//   }
+//   return element;
+// })
+// console.log(new_arr);
+// 5) "name"-i en uzun olan obyekti tapin
+
+// let new_arr = arr.reduce((max, element)=>{
+//     if(max.length < element.name.length){
+//       max = element.name
+//     }
+//     return max
+// },arr[0].name)
+// console.log(new_arr);
+
+// 6) "name"-i en uzun olan obyektin key'ni tapin
+// let new_arr = arr.reduce((max, element)=>{
+//   return element.name.length > max.name.length ? element : max;
+// },arr[0])    
+// console.log(new_arr);
+// 7)  "name"-i en uzun olan obyektin indexin kvadratini hesablayin                  
+// let new_arr = arr.reduce((max, element, index) => {
+//   return element.name.length > arr[max].name.length ? index : max;
+// }, 0);
+// console.log(new_arr);
+
+// 8) "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin. (filter)
+// let new_arr = arr.filter((element, index) => {
+//   return element.name.length === 4
+// });
+// console.log(new_arr);
+
+// 9)  en boyuk "key"
+// i olan obyektin "name"-i ni tapin
+// let new_arr = arr.reduce((max,element) => {
+//   return element.key > max.key ? element : max;
+// },arr[0]).name;
+// console.log(new_arr);
+// 10) terkibinde 2 'l' (el) herfi olan obyekt(ler)i tapin.                    
+
+
+// 11) terkibinde ən az 2 't' herfi olan obyekt(ler)i tapın.
+
+
+// 12) key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
+// let new_arr = arr.filter((element)=>{
+//   return element.key > 10 && element.name[0] === "l" 
+// })
+// console.log(new_arr);
