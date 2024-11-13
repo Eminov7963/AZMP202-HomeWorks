@@ -1,0 +1,61 @@
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 20px 0px 70px;
+    gap: 15px;
+}
+.box .num{
+    width: 50%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+     text-align: right;
+     border-radius: 5px;
+}
+.box .value {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box .value .value1 {
+    width: 100%;
+    font-size: 20px;
+  
+}
+.box .value .value2 {
+    width: 100%;
+    font-size: 20px;
+  
+}
+.add{
+    width: 50%;
+    font-size: 20px;
+}
+.sub{
+    width: 50%;
+    font-size: 20px;
+}
+.multi{
+    width: 50%;
+    font-size: 20px;
+}
+.division{
+    width: 50%;
+    font-size: 20px;
+}
+.reset{
+    width: 50%;
+    font-size: 20px;
+    background-color: orange;    
+}
