@@ -1,0 +1,116 @@
+main{
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Sans";
+    position: relative;
+}
+main .container{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-top: 100px;
+}
+main .container .text {
+    width: 30%;
+    
+}
+main .container .btn {
+    width: 30%;
+    
+    
+}
+main .container .btn button {
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    
+    
+}
+main .input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    font-size: 1.7rem;
+}
+main .input .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .input .title input{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+main .input .price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .input .price input{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+main .input .description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .input .description input{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+main .input .img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .input .img input{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+#error{
+    display: none;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: rgb(165, 138, 42);
+    color: white;
+    position: absolute;
+    padding: 100px;
+    top: 40%;
+    right: 40%;
+      
+    
+}
+#error_btn{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    width: 100px;
+    
+}
+#correct_btn{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(23, 136, 216);
+    width: 100px;
+}
+#correct{
+    display: none;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: rgb(165, 138, 42);
+    color: white;
+    position: absolute;
+    padding: 100px;
+    top: 40%;
+    right: 40%;
+}

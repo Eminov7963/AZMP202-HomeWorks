@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Add Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="text">
+                <h1>Add Form</h1>
+            </div>
+            <form id="addForm">
+                <div class="input">
+                    <div class="title">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Title" required>
+                    </div>
+                    <div class="price">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" placeholder="Price" required>
+                    </div>
+                    <div class="description">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Description">
+                    </div>
+                    <div class="img">
+                        <label for="img">Image</label>
+                        <input type="text" id="img" placeholder="Image URL">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="sub_btn">Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="error">
+            <h1>Opps!!! &#10060;</h1>
+            <p>Xanalari Tam Doldurun!!!</p>
+            <button id="error_btn">OK</button>
+        </div>
+        <div id="correct">
+            <h1>&#10003;!!</h1>
+            <p>Əlavə olundu</p>
+            <button id="correct_btn">OK</button>
+        </div> 
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
