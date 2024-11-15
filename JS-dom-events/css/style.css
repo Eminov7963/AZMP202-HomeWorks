@@ -1,6 +1,4 @@
 main{
-    display: flex;
-    justify-content: center;
     font-family: "Noto Sans";
     position: relative;
 }
@@ -83,10 +81,14 @@ main .input .img input{
     color: white;
     position: absolute;
     padding: 100px;
-    top: 40%;
+    top: 5%;
     right: 40%;
       
     
+}
+.err_box{
+    width: 100%;
+    text-align: center;
 }
 #error_btn{
     border: none;
@@ -103,6 +105,10 @@ main .input .img input{
     background-color: rgb(23, 136, 216);
     width: 100px;
 }
+.corr_box{
+    width: 100%;
+}
+
 #correct{
     display: none;
     border: 1px solid red;
@@ -111,6 +117,27 @@ main .input .img input{
     color: white;
     position: absolute;
     padding: 100px;
-    top: 40%;
+    top: 5%;
     right: 40%;
+}
+
+
+
+
+
+
+#product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product .list {
+    width: 80%;
+}
+
+.btn_inputs{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
