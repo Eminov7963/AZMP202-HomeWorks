@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto"
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+header{
+    height: 100%;
+    background-color: #2AD385;
+}
+section#oclock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#oclock .container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+   margin-top: 100px;
+   border: 3px  solid white;
+   border-radius: 8px;
+}
+.inner_box{
+    padding: 30px;
+}
+.inputs{
+    margin-bottom: 16px;
+}
+.inputs input{
+    border: none;
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    margin-left: 5px;
+    
+}
+
+.box .span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+span{
+    font-size: 1.7rem;
+}
+.span1{
+    text-align: center;
+}
+.span2{
+    text-align: center;
+}
+.span3{
+    text-align: center;
+}
+.box .start{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+#start{
+    background-color: #AFE8CF;
+    color: #218b59  ;
+    border: 10px solid transparent;
+    border-radius: 8px;
+} 
