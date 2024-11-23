@@ -17,7 +17,8 @@ sub_form.addEventListener("submit", function (e) {
     );
   });
   if (logForm) {
-    logForm.logged = true;
+    logForm.Islogged = true;
+    logForm.isAdmin = true;
     setDatalocalstorage("users", users);
     window.location.replace("index.html");
   } else {

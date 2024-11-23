@@ -15,8 +15,10 @@ sub_form.addEventListener("submit", function (e) {
         id: Date.now(),
         email: emailValue,
         password: passwordValue,
-        logged: false,
-        basket: []
+        Islogged: false,
+        isAdmin: false,
+        basket: [],
+        favorites: []
       };
       users.push(user);
       setDatalocalstorage("users", users);
