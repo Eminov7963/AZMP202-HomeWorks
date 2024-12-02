@@ -1,0 +1,40 @@
+{
+  "flowers": [
+    {
+      "id": "1",
+      "name": "Rose",
+      "image": "./img/b2.jpg",
+      "price": 10
+    },
+    {
+      "id": "2",
+      "name": "Tulip",
+      "image": "./img/b3.jpg",
+      "price": 15
+    },
+    {
+      "id": "3",
+      "name": "Lale",
+      "image": "./img/b4.jpg",
+      "price": 12
+    },
+    {
+      "id": "4",
+      "name": "Red",
+      "image": "./img/sl3-1050x700.jpg",
+      "price": 19
+    },
+    {
+      "id": "5",
+      "name": "Gonca",
+      "image": "./img/fl1.jpg",
+      "price": 17
+    },
+    {
+      "id": "6",
+      "name": "Yasemen",
+      "image": "./img/fl2.jpg",
+      "price": 6
+    }
+  ]
+}
