@@ -142,8 +142,6 @@
                         aria-describedby="emailHelp"
                       />
                     </div>
-
-
                   </form>
                 </div>
                 <div class="modal-footer">
@@ -154,7 +152,12 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary" form="editform">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                    form="editform"
+                  >
                     Save changes
                   </button>
                 </div>
@@ -167,22 +170,22 @@
         <div class="container">
           <div class="row team">
             <div class="col-8">
-              <h1>Our Team</h1> 
+              <h1>Our Team</h1>
             </div>
           </div>
           <div class="row people">
             <div class="col-4">
-              <img src="./img/portr1.jpg" alt="">
+              <img src="./img/portr1.jpg" alt="" />
               <h1>Sara Adult</h1>
               <p>Biologist</p>
             </div>
             <div class="col-4">
-              <img src="./img/portr2.jpg" alt="">
+              <img src="./img/portr2.jpg" alt="" />
               <h1>Sara Adult</h1>
               <p>Biologist</p>
             </div>
             <div class="col-4">
-              <img src="./img/portr3.jpg" alt="">
+              <img src="./img/portr3.jpg" alt="" />
               <h1>Sara Adult</h1>
               <p>Biologist</p>
             </div>
@@ -195,7 +198,7 @@
         <div class="row">
           <div class="col-6 first">
             <div class="input">
-              <input type="email" placeholder="Your email">
+              <input type="email" placeholder="Your email" />
             </div>
             <nav>
               <ul>
@@ -220,6 +223,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

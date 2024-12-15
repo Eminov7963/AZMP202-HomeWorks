@@ -1,10 +1,16 @@
 import { DataID } from "./constant.js";
 const product_cards = document.getElementById("product-cards");
-
+const cards = document.querySelector(".cards");
+let Alldata = null;
+let ID  = null;
 function FechData(products) {
   fetch(`${DataID}/${products}`, { method: "GET" })
     .then((promise) => promise.json())
-    .then((data) => MadeCards(data))
+    .then((data) => {
+      
+      Alldata = data
+      MadeCards(Alldata);
+    })
     .catch((err) => console.log(err));
 }
 
@@ -53,6 +59,18 @@ function MadeCards(arr) {
       
     });
   });
+  const editbtns = document.querySelectorAll(".edit")
+  
+  editbtns.forEach((btn)=>{
+    btn.addEventListener("click", function(){
+      const prodId = this.getAttribute("data_id");
+      ID = prodId;
+      const chosenProd = Alldata.find((q)=> q.id == prodId);
+      Filteredprod(chosenProd);
+
+      
+    })
+  })
 }
 
 function DeleteData(endpoint, iD) {
@@ -69,3 +87,35 @@ function DeleteData(endpoint, iD) {
     })
     .catch((err) => console.log("Error:", err));
 }
+  const nameInput = document.querySelector("#name");
+  const price = document.querySelector("#price");
+  function Filteredprod(obj){
+  nameInput.value = obj.name
+  price.value = obj.price
+
+}
+const form = document.querySelector("#editform");
+
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+  const editedProd = {
+    name : nameInput.value.trim(),
+    price : price.value.trim()
+  }
+  fetch(`${DataID}/flowers/${ID}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(editedProd),
+  })
+    .then((res) => {
+      if (res.ok) {
+        this.reset();
+        FechData("flowers");
+      }
+    })
+    .catch((err) => console.log(err));
+
+})
+

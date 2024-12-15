@@ -35,6 +35,24 @@
       "name": "Yasemen",
       "image": "./img/fl2.jpg",
       "price": 6
+    },
+    {
+      "id": "7",
+      "name": "Yasemen",
+      "image": "./img/fl2.jpg",
+      "price": 6
+    },
+    {
+      "id": "8",
+      "name": "Yasemen",
+      "image": "./img/fl2.jpg",
+      "price": 6
+    },
+    {
+      "id": "9",
+      "name": "Yasemen",
+      "image": "./img/fl2.jpg",
+      "price": 6
     }
   ]
 }
