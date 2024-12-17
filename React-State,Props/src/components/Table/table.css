@@ -1,0 +1,21 @@
+.table .head{
+    display: flex;
+    gap: 120px;
+    padding-bottom: 20px;
+}
+.table .body{
+    display: flex;
+    gap: 30px;
+}
+.delete{
+    margin-left: 10px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    transition: 0.4s;
+}
+#delete:hover{
+    border: 1px solid rgb(228, 55, 55);
+    background-color: rgb(228, 55, 55);
+
+}
