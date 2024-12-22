@@ -1,0 +1,144 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .left {
+    display: flex;
+    font-size: 1.5rem;
+    width: 40%;
+    flex-direction: column;
+    gap: 20px;
+    .cards {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      .box1 {
+        display: flex;
+        gap: 20px;
+        .card1 {
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #9bd3d0;
+          width: 150px;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+        .card2 {
+          width: 150px;
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #fec447;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+      }
+      .box2 {
+        display: flex;
+        gap: 20px;
+        .card1 {
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #FECCB5;
+          width: 150px;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+        .card2 {
+          width: 150px;
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #92B5FF;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+      }
+      .box3 {
+        display: flex;
+        gap: 20px;
+        .card1 {
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #C4D39B;
+          width: 150px;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+        .card2 {
+          width: 150px;
+          border: 3px solid black;
+          display: flex;
+          padding: 10px;
+          gap: 10px;
+          text-align: center;
+          background-color: #D2CEFF;
+          transition: 0.4s;
+          .icon {
+            padding: 5px;
+            background-color: white;
+            border: 3px solid black;
+          }
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+      }
+    }
+  }
+  .right {
+    img {
+      width: 100%;
+      height: 700px;
+    }
+  }
+}
