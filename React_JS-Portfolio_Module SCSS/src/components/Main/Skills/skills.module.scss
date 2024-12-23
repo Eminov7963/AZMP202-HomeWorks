@@ -2,20 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
   .left {
     display: flex;
     font-size: 1.5rem;
     width: 40%;
     flex-direction: column;
     gap: 20px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
     .cards {
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
       .box1 {
         display: flex;
         gap: 20px;
+        @media (max-width: 767px) {
+          width: 120%;
+        }
+        @media (max-width: 667px) {
+          width: 300px;
+        }
         .card1 {
           border: 3px solid black;
           display: flex;
@@ -25,6 +36,7 @@
           background-color: #9bd3d0;
           width: 150px;
           transition: 0.4s;
+
           .icon {
             padding: 5px;
             background-color: white;
@@ -56,15 +68,24 @@
       .box2 {
         display: flex;
         gap: 20px;
+        @media (max-width: 767px) {
+          width: 120%;
+        }
+        @media (max-width: 667px) {
+          width: 300px;
+        }
         .card1 {
           border: 3px solid black;
           display: flex;
           padding: 10px;
           gap: 10px;
           text-align: center;
-          background-color: #FECCB5;
+          background-color: #feccb5;
           width: 150px;
           transition: 0.4s;
+          @media (max-width: 667px) {
+            width: 115px;
+          }
           .icon {
             padding: 5px;
             background-color: white;
@@ -81,8 +102,11 @@
           padding: 10px;
           gap: 10px;
           text-align: center;
-          background-color: #92B5FF;
+          background-color: #92b5ff;
           transition: 0.4s;
+          @media (max-width: 667px) {
+            width: 117px;
+          }
           .icon {
             padding: 5px;
             background-color: white;
@@ -96,15 +120,24 @@
       .box3 {
         display: flex;
         gap: 20px;
+        @media (max-width: 767px) {
+          width: 120%;
+        }
+        @media (max-width: 667px) {
+          width: 310px;
+        }
         .card1 {
           border: 3px solid black;
           display: flex;
           padding: 10px;
           gap: 10px;
           text-align: center;
-          background-color: #C4D39B;
+          background-color: #c4d39b;
           width: 150px;
           transition: 0.4s;
+          @media (max-width: 667px) {
+            width: 300px;
+          }
           .icon {
             padding: 5px;
             background-color: white;
@@ -121,8 +154,11 @@
           padding: 10px;
           gap: 10px;
           text-align: center;
-          background-color: #D2CEFF;
+          background-color: #d2ceff;
           transition: 0.4s;
+          @media (max-width: 667px) {
+            width: 300px;
+          }
           .icon {
             padding: 5px;
             background-color: white;
@@ -139,6 +175,15 @@
     img {
       width: 100%;
       height: 700px;
+      @media (max-width: 927px) {
+        width: 80%;
+        height: 500px;
+        padding-left: 50px;
+      }
+      @media (max-width: 767px) {
+        padding-left: 0px;
+        height: 400px;
+      }
     }
   }
 }

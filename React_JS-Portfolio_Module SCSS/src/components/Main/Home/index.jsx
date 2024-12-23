@@ -10,12 +10,12 @@ const Home = () => {
           <h6>My name is Emin</h6>
           <h1 className={styles.name}>
             {text.split("").map((char, index) =>
-              char === " " ? ( // Boşluk varsa, boşluk için de animasyon ekle
-                <span key={index}>&nbsp;</span> // Boşluk karakterini göstermek için
+              char === " " ? ( 
+                <span key={index}>&nbsp;</span> 
               ) : (
                 <span
                   className={styles.letter}
-                  style={{ "--i": index + 1 }} // Her harfe sırasıyla gecikme veriyoruz
+                  style={{ "--i": index + 1 }} 
                   key={index}
                 >
                   {char}
