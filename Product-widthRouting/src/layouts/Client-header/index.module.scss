@@ -1,0 +1,30 @@
+*{
+    text-decoration: none;
+    list-style-type: none ;
+    padding: 0;
+    margin: 0;
+}
+header {
+  background-color: orange;
+  padding: 2rem 0;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 2rem;
+
+    .logo {
+      color: #fff;
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+      li {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
