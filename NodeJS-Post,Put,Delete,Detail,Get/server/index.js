@@ -59,6 +59,8 @@ const fake_api_data = [
   },
 ];
 
+let currentTimestamp = Date.now();
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
@@ -150,12 +152,10 @@ app.delete("/products/:id", (req, res) => {
 app.post("/products", (req, res) => {
   const { title, price, description, category } = req.body;
   const newProduct = {
-    id: uuidv4(),
+    id: currentTimestamp++,
     title,
-    price,
-    description,
-    category,
-  }
+    price
+  };
   fake_api_data.push(newProduct);
   res.status(201).send({
     product: fake_api_data,
