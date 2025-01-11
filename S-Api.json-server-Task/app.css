@@ -1,0 +1,33 @@
+
+.card img{
+    width: 30%;
+}
+.card{
+    padding: 1.5rem;
+    background-color: rgb(163, 221, 246);
+}
+.delete{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.details{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+.edit{
+    background-color: rgb(169, 169, 174);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 192, 196);
+}
+.delete , .details , .edit{
+    margin-top: 10px;
+    padding: 5px;
+
+    
+}
