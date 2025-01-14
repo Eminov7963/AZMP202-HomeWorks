@@ -4,7 +4,8 @@ import {toggleFavorites} from "../../../redux/features/wishlistSlice"
 
 const Wishlist = () => {
   const wishlist = useSelector((state) => state.wishlist);
-
+  console.log(wishlist);
+  
   const dispatch = useDispatch();
 
   return (
@@ -15,7 +16,7 @@ const Wishlist = () => {
         wishlist.items.map((q) => {
           return (
             <div key={q.id}>
-              <span>{q.name}</span>
+              <span>{q.title}</span>
               <button
                 onClick={() => {
                   dispatch(toggleFavorites(q));
