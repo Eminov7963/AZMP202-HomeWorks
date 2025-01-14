@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { FaHeart } from "react-icons/fa";
-import { toggleFavorites } from "../../../redux/features/wishlistSlice";
+import {toggleFavorites} from "../../../redux/features/wishlistSlice"
 
 const Wishlist = () => {
   const wishlist = useSelector((state) => state.wishlist);

@@ -17,8 +17,8 @@ function App() {
         {/* Client */}
         <Route path="/" element={<ClientMainLayout />}>
           <Route index element={<Home />} />
-          <Route path="/:id" element={<Details />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/:id" element={<Details />} />
         </Route>
         {/* Admin */}
         <Route path="/admin" element={<AdminMainLayout />}>

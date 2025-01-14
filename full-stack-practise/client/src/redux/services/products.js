@@ -6,6 +6,7 @@ export const productsApi = createApi({
   endpoints: (builder) => ({
     getAllproducts: builder.query({
       query: () => `products`,
+      providesTags: ["Categories"],
     }),
     getProductsById: builder.query({
       query: (id) => `products/${id}`,
@@ -18,7 +19,15 @@ export const productsApi = createApi({
       }),
       invalidatesTags: ["Categories"],
     }),
+    postProducts: builder.mutation({
+      query: (payload) => ({
+        url: `products`,
+        method: "POST",
+        body: payload,
+      }),
+      invalidatesTags: ["Categories"],
+    }),
   }),
 });
 
-export const {useGetAllproductsQuery,useDeleteProdutcsByIdMutation,useGetProductsByIdQuery} = productsApi;
+export const {useGetAllproductsQuery,useDeleteProdutcsByIdMutation,useGetProductsByIdQuery,usePostProductsMutation} = productsApi;
