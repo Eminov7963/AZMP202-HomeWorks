@@ -8,6 +8,7 @@ import {
   useDeleteProdutcsByIdMutation,
 } from "../../../redux/services/products";
 import styles from "./index.module.scss";
+import { CiUser } from "react-icons/ci";
 
 
 const Home = () => {
@@ -56,80 +57,136 @@ const Home = () => {
             <button className={styles.consultancy}>Book Consultancy</button>
           </div>
           <div className={styles.right}>
-            <img src="https://preview.colorlib.com/theme/immigration/img/header-img.png" alt="" />
+            <img
+              src="https://preview.colorlib.com/theme/immigration/img/header-img.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
       <section className={styles.products}>
-      <div className={styles.productsContainer}>
-        {products.map((product) => (
-          <div key={product._id} className={styles.productCard}>
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
-            <p className={styles.price}>Price: ${product.price}</p>
-            <div className={styles.buttonContainer}>
-              <button
-                className={styles.deleteButton}
-                onClick={() => handleDelete(product._id)}
-              >
-                Delete
-              </button>
+        <div className={styles.productsContainer}>
+          {products.map((product) => (
+            <div key={product._id} className={styles.productCard}>
+              <h3>{product.title}</h3>
+              <p>{product.description}</p>
+              <p className={styles.price}>Price: ${product.price}</p>
+              <div className={styles.buttonContainer}>
+                <button
+                  className={styles.deleteButton}
+                  onClick={() => handleDelete(product._id)}
+                >
+                  Delete
+                </button>
 
-              <button
-                className={styles.detailsButton}
-                onClick={() => handleDetails(product._id)}
-              >
-                Details
-              </button>
+                <button
+                  className={styles.detailsButton}
+                  onClick={() => handleDetails(product._id)}
+                >
+                  Details
+                </button>
 
-              <button
-                onClick={() => {
-                  dispatch(toggleFavorites(product));
-                }}
-              >
-                {!wishlist?.items.find((q) => q.id === product._id) ? (
-                  <FaRegHeart />
-                ) : (
-                  <FaHeart />
-                )}
-              </button>
+                <button
+                  onClick={() => {
+                    dispatch(toggleFavorites(product));
+                  }}
+                >
+                  {!wishlist?.items.find((q) => q.id === product._id) ? (
+                    <FaRegHeart />
+                  ) : (
+                    <FaHeart />
+                  )}
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </section>
       <section className={styles.cards}>
         <div className={styles.top}>
           <h1>Requirements to be Immigrants</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
         <div className={styles.bottom}>
           <div className={styles.boxs}>
-            <img src="https://preview.colorlib.com/theme/immigration/img/s1.jpg" alt="" />
-            <div>
+            <img
+              src="https://preview.colorlib.com/theme/immigration/img/s1.jpg"
+              alt=""
+            />
+
             <div className={styles.country}>United States</div>
             <h3>Addiction When Gambling Becomes A Problem</h3>
             <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div className={styles.boxs}>
+            <img
+              src="https://preview.colorlib.com/theme/immigration/img/s2.jpg"
+              alt=""
+            />
+            <div className={styles.country}>United States</div>
+            <h3>Addiction When Gambling Becomes A Problem</h3>
+            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div className={styles.boxs}>
+            <img
+              src="https://preview.colorlib.com/theme/immigration/img/s3.jpg"
+              alt=""
+            />
+            <div className={styles.country}>United States</div>
+            <h3>Addiction When Gambling Becomes A Problem</h3>
+            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div className={styles.boxs}>
+            <img
+              src="https://preview.colorlib.com/theme/immigration/img/s4.jpg"
+              alt=""
+            />
+            <div className={styles.country}>United States</div>
+            <h3>Addiction When Gambling Becomes A Problem</h3>
+            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.miniBox}>
+        <div className={styles.top}>
+          <h1>Our Unique Features that can impress you</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.miniboxs}>
+            <div className={styles.hed}>
+              <CiUser />
+              <h3>Expert Technicians</h3>
             </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid
+              advancement of technology and power.
+            </p>
           </div>
-          <div className={styles.boxs}>
-            <img src="https://preview.colorlib.com/theme/immigration/img/s2.jpg" alt="" />
-            <div className={styles.country}>United States</div>
-            <h3>Addiction When Gambling Becomes A Problem</h3>
-            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          <div className={styles.miniboxs}>
+            <div className={styles.hed}>
+              <CiUser />
+              <h3>Expert Technicians</h3>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid
+              advancement of technology and power.
+            </p>
           </div>
-          <div className={styles.boxs}>
-            <img src="https://preview.colorlib.com/theme/immigration/img/s3.jpg" alt="" />
-            <div className={styles.country}>United States</div>
-            <h3>Addiction When Gambling Becomes A Problem</h3>
-            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div className={styles.boxs}>
-            <img src="https://preview.colorlib.com/theme/immigration/img/s4.jpg" alt="" />
-            <div className={styles.country}>United States</div>
-            <h3>Addiction When Gambling Becomes A Problem</h3>
-            <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+          <div className={styles.miniboxs}>
+            <div className={styles.hed}>
+              <CiUser />
+              <h3>Expert Technicians</h3>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid
+              advancement of technology and power.
+            </p>
           </div>
         </div>
       </section>
